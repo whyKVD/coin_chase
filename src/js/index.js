@@ -28,10 +28,11 @@ function createCrypto_box(element) {
   document.getElementById("crypto_boxes").appendChild(crypto_box);
 }
 
-instance.get("https://api.coincap.io/v2/assets")
+instance.get("https://api.coincap.io/v2/assets?limit=2000")
   .then(response => {
     document.getElementById("crypto_boxes").textContent = "";
     response.data.data.forEach(element => {
+      console.log(element)
       createCrypto_box(element)
     });
   })
