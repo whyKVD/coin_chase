@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#crypto_boxex{
+  background-color: #ffddff;
+}
+
+.crypto_box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 2rem;
+  background-color: #ddffdd;
+  margin: 1rem;
+  border: 1px solid transparent;
+  border-radius: .6rem;
+}
+
+.inline{
+  display: inline-block;
+}
+
+.symbol{
+  width: 5rem;
+}
+
+.name{
+  width: 10rem;
+}
